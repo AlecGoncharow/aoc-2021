@@ -12,3 +12,10 @@ version = "0.1.0"
 dependencies = [
  "common",
 ]
+
+[[package]]
+name = "d02"
+version = "0.1.0"
+dependencies = [
+ "common",
+]

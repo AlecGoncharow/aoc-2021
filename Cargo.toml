@@ -2,4 +2,5 @@
 members = [
     "common",
     "d01",
+    "d02",
 ]

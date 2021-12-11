@@ -14,7 +14,8 @@ where
     T: FromStr,
 {
     Ok(get_input()?
-        .split_whitespace()
+        .trim()
+        .split("\n")
         .map(|s| match s.parse::<T>() {
             Ok(inner) => inner,
             Err(_) => panic!("oh, no! {} isn't the type you thought it was!", s),
