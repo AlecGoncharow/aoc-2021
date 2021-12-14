@@ -43,8 +43,8 @@ fn main() -> std::io::Result<()> {
         // https://math.stackexchange.com/questions/593318/factorial-but-with-addition/593323
         // https://en.wikipedia.org/wiki/Triangular_number
         let diff = average.abs_diff(*value);
-        let binomial_coefficient = (diff.pow(2) + diff) / 2;
-        cost += binomial_coefficient;
+        let triangle_number = (diff.pow(2) + diff) / 2;
+        cost += triangle_number;
     }
 
     println!("[Part 2] cost {}", cost);
@@ -57,8 +57,8 @@ fn main() -> std::io::Result<()> {
             // https://math.stackexchange.com/questions/593318/factorial-but-with-addition/593323
             // https://en.wikipedia.org/wiki/Triangular_number
             let diff = i.abs_diff(*value);
-            let binomial_coefficient = (diff.pow(2) + diff) / 2;
-            cost += binomial_coefficient;
+            let triangle_number = (diff.pow(2) + diff) / 2;
+            cost += triangle_number;
         }
 
         if i == 459 {
